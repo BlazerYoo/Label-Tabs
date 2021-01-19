@@ -39,6 +39,8 @@
 
     function changeTitle() {
         var label = prompt("Label this tab as:");
-        document.title = label;
+        if (label != null) {
+            document.title = label;
+        }
     }
 })();
